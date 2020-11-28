@@ -13,3 +13,29 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+@import url(https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+@import url(https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css);
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main-text {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  margin-right: 0px;
+  margin-right: -50%;
+  color: rgba(255, 255, 255, 0.98);
+  width: 100%;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 0;
+}
