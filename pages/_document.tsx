@@ -10,7 +10,7 @@ class Doc extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+          <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
           <meta name="theme-color" content="#000000" />
         </Head>
         <body>

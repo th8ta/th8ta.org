@@ -7,9 +7,7 @@ const particleSize = 1.4;
 const pickSpeed = () => random([0.2, 0.5, 0.5, 0.8, 1, 2]);
 const bothDirections = true;
 
-window.addEventListener("resize", () => {
-  setup();
-});
+window.addEventListener("resize", setup);
 
 function setup() {
   createCanvas(windowWidth, windowHeight);

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Metas from "../components/Metas";
+import Nav from "../components/Nav";
 import styles from "../styles/Home.module.sass";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         description="Building from all angles"
         image="/favicon.png"
       />
+      <Nav />
       <div className={styles.Landing}>
         <h1>
           th<span>8</span>ta
