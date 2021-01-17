@@ -18,10 +18,10 @@ export default function Home() {
       <Nav />
       <VertoProvider>
         <Page>
-          <div className={styles.Hero}>
+          <div className={styles.Hero} style={{ marginTop: "2.3em" }}>
             <iframe
               src="https://my.spline.design/deviceiphone12-f8b7820e686be2d0b1b63f9b8949e034/"
-              frameborder="0"
+              frameBorder="0"
               width="100%"
               height="100%"
             ></iframe>
@@ -44,7 +44,6 @@ export default function Home() {
               </p>
             </div>
           </Card>
-          <h1 className={styles.title}>About us</h1>
         </Page>
       </VertoProvider>
     </>

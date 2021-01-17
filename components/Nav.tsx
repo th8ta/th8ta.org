@@ -14,6 +14,8 @@ export default function Nav() {
         href="https://blog.th8ta.org"
         target="_blank"
         rel="noopener noreferrer"
+        className="underline"
+        style={{ color: "black" }}
       >
         Blog
       </a>
