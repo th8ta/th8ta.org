@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Metas from "../components/Metas";
 import Nav from "../components/Nav";
@@ -5,13 +6,15 @@ import styles from "../styles/Home.module.sass";
 import { VertoProvider, Page, Card } from "@verto/ui";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
         <title>th8ta</title>
       </Head>
       <Metas
-        title="Th8ta"
+        title="th8ta"
         description="Building from all angles"
         image="/favicon.png"
       />
@@ -32,7 +35,9 @@ export default function Home() {
             className={styles.testToken}
             hoverable
             shadow
-            onClick={() => (window.location.href = "https://verto.exchange")}
+            onClick={() => {
+              router.push("https://verto.exchange");
+            }}
           >
             <h1 className={styles.code}>VRT</h1>
             <div className={styles.info}>
