@@ -100,13 +100,17 @@ export default function Home() {
                 router.push(people[0].link);
               }}
             >
-              <img
-                src={people[0].img}
-                height="50px"
-                style={{ borderRadius: "50%" }}
-              />
-              <h4>{people[0].name}</h4>
-              <p>{people[0].title}</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  src={people[0].img}
+                  height="50px"
+                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
+                />
+                <div>
+                  <h4>{people[0].name}</h4>
+                  <p>{people[0].title}</p>
+                </div>
+              </div>
             </Card>
             <Card
               style={{
@@ -122,13 +126,17 @@ export default function Home() {
                 router.push(people[1].link);
               }}
             >
-              <img
-                src={people[1].img}
-                height="50px"
-                style={{ borderRadius: "50%" }}
-              />
-              <h4>{people[1].name}</h4>
-              <p>{people[1].title}</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  src={people[1].img}
+                  height="50px"
+                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
+                />
+                <div>
+                  <h4>{people[1].name}</h4>
+                  <p>{people[1].title}</p>
+                </div>
+              </div>
             </Card>
             <Card
               style={{
@@ -144,13 +152,17 @@ export default function Home() {
                 router.push(people[2].link);
               }}
             >
-              <img
-                src={people[2].img}
-                height="50px"
-                style={{ borderRadius: "50%" }}
-              />
-              <h4>{people[2].name}</h4>
-              <p>{people[2].title}</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  src={people[2].img}
+                  height="50px"
+                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
+                />
+                <div>
+                  <h4>{people[2].name}</h4>
+                  <p>{people[2].title}</p>
+                </div>
+              </div>
             </Card>
             <Card
               style={{
@@ -166,13 +178,17 @@ export default function Home() {
                 router.push(people[3].link);
               }}
             >
-              <img
-                src={people[3].img}
-                height="50px"
-                style={{ borderRadius: "50%" }}
-              />
-              <h4>{people[3].name}</h4>
-              <p>{people[3].title}</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  src={people[3].img}
+                  height="50px"
+                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
+                />
+                <div>
+                  <h4>{people[3].name}</h4>
+                  <p>{people[3].title}</p>
+                </div>
+              </div>
             </Card>
             <Card
               style={{
@@ -188,13 +204,17 @@ export default function Home() {
                 router.push(people[4].link);
               }}
             >
-              <img
-                src={people[4].img}
-                height="50px"
-                style={{ borderRadius: "50%" }}
-              />
-              <h4>{people[4].name}</h4>
-              <p>{people[4].title}</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  src={people[4].img}
+                  height="50px"
+                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
+                />
+                <div>
+                  <h4>{people[4].name}</h4>
+                  <p>{people[4].title}</p>
+                </div>
+              </div>
             </Card>
           </div>
         </Page>
