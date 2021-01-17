@@ -18,9 +18,15 @@ export default function Home() {
       <Nav />
       <VertoProvider>
         <Page>
-          <h3>Building from all angles.</h3>
-          <div className={styles.Hero}></div>
-          <h1>Ventures</h1>
+          <div className={styles.Hero}>
+            <iframe
+              src="https://my.spline.design/deviceiphone12-f8b7820e686be2d0b1b63f9b8949e034/"
+              frameborder="0"
+              width="100%"
+              height="100%"
+            ></iframe>
+          </div>
+          <h1 className={styles.title}>Ventures</h1>
           <Card
             style={{ marginBottom: "1em" }}
             className={styles.testToken}
@@ -31,14 +37,14 @@ export default function Home() {
             <h1 className={styles.code}>VRT</h1>
             <div className={styles.info}>
               <h4 className={styles.code}>
-                <span>[PST]</span>Verto
+                <span>[PSC]</span>Verto
               </h4>
               <p className={styles.code}>
                 <span>ID:</span>usjm4PCxUd5mtaon7zc97-dt-3qf67yPyqgzLnLqk5A
               </p>
             </div>
           </Card>
-          <h1>About us</h1>
+          <h1 className={styles.title}>About us</h1>
         </Page>
       </VertoProvider>
     </>
