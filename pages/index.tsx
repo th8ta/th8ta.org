@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Metas from "../components/Metas";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 import styles from "../styles/Home.module.sass";
 import { VertoProvider, Page, Card } from "@verto/ui";
 import { Grid } from "@geist-ui/react";
@@ -111,6 +112,7 @@ export default function Home() {
           <h1 className={styles.title}>Who we are</h1>
           <Grid.Container gap={2}>{aboutCards}</Grid.Container>
         </Page>
+        <Footer />
       </VertoProvider>
     </>
   );
