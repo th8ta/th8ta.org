@@ -4,6 +4,7 @@ import Metas from "../components/Metas";
 import Nav from "../components/Nav";
 import styles from "../styles/Home.module.sass";
 import { VertoProvider, Page, Card } from "@verto/ui";
+import { Grid } from "@geist-ui/react";
 
 const people = [
   {
@@ -28,18 +29,43 @@ const people = [
     name: "Fabian Riewe",
     title: "Blockchain Developer",
     img: "/fabian.jpeg",
-    link: "https://twitter.com/martonlederer",
+    link: "https://twitter.com/RieweFabian",
   },
   {
     name: "Maximous Black",
     title: "User Experience Designer",
     img: "/max.jpeg",
-    link: "https://twitter.com/martonlederer",
+    link: "https://twitter.com/maximousblk",
   },
 ];
 
+const aboutCards = [];
+
 export default function Home() {
   const router = useRouter();
+  for (let i = 0; i < people.length; i++) {
+    aboutCards.push(
+      <Grid xs={24} sm={24} md={12} lg={12} xl={8}>
+        <Card
+          design="Geist"
+          className={styles.aboutCard}
+          hoverable
+          onClick={() => {
+            router.push(people[i].link);
+          }}
+          key={i}
+        >
+          <div className={styles.image}>
+            <img src={people[i].img} height="50px" />
+            <div className={styles.body}>
+              <h4>{people[i].name}</h4>
+              <p>{people[i].title}</p>
+            </div>
+          </div>
+        </Card>
+      </Grid>
+    );
+  }
 
   return (
     <>
@@ -82,141 +108,8 @@ export default function Home() {
               </p>
             </div>
           </Card>
-          <h1 className={styles.title}>Who We Are</h1>
-          <div
-            style={{ display: "grid", gridGap: "25px", alignItems: "center" }}
-          >
-            <Card
-              style={{
-                marginBottom: "1em",
-                cursor: "pointer",
-                gridRowStart: 1,
-                gridColumnStart: 1,
-              }}
-              design="Geist"
-              hoverable
-              shadow
-              onClick={() => {
-                router.push(people[0].link);
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <img
-                  src={people[0].img}
-                  height="50px"
-                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
-                />
-                <div>
-                  <h4>{people[0].name}</h4>
-                  <p>{people[0].title}</p>
-                </div>
-              </div>
-            </Card>
-            <Card
-              style={{
-                marginBottom: "1em",
-                cursor: "pointer",
-                gridRowStart: 1,
-                gridColumnStart: 2,
-              }}
-              design="Geist"
-              hoverable
-              shadow
-              onClick={() => {
-                router.push(people[1].link);
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <img
-                  src={people[1].img}
-                  height="50px"
-                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
-                />
-                <div>
-                  <h4>{people[1].name}</h4>
-                  <p>{people[1].title}</p>
-                </div>
-              </div>
-            </Card>
-            <Card
-              style={{
-                marginBottom: "1em",
-                cursor: "pointer",
-                gridRowStart: 2,
-                gridColumnStart: 1,
-              }}
-              design="Geist"
-              hoverable
-              shadow
-              onClick={() => {
-                router.push(people[2].link);
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <img
-                  src={people[2].img}
-                  height="50px"
-                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
-                />
-                <div>
-                  <h4>{people[2].name}</h4>
-                  <p>{people[2].title}</p>
-                </div>
-              </div>
-            </Card>
-            <Card
-              style={{
-                marginBottom: "1em",
-                cursor: "pointer",
-                gridRowStart: 2,
-                gridColumnStart: 2,
-              }}
-              design="Geist"
-              hoverable
-              shadow
-              onClick={() => {
-                router.push(people[3].link);
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <img
-                  src={people[3].img}
-                  height="50px"
-                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
-                />
-                <div>
-                  <h4>{people[3].name}</h4>
-                  <p>{people[3].title}</p>
-                </div>
-              </div>
-            </Card>
-            <Card
-              style={{
-                marginBottom: "1em",
-                cursor: "pointer",
-                gridRowStart: 3,
-                gridColumnStart: 1,
-              }}
-              design="Geist"
-              hoverable
-              shadow
-              onClick={() => {
-                router.push(people[4].link);
-              }}
-            >
-              <div style={{ display: "flex" }}>
-                <img
-                  src={people[4].img}
-                  height="50px"
-                  style={{ borderRadius: "50%", filter: "grayscale(100%)" }}
-                />
-                <div>
-                  <h4>{people[4].name}</h4>
-                  <p>{people[4].title}</p>
-                </div>
-              </div>
-            </Card>
-          </div>
+          <h1 className={styles.title}>Who we are</h1>
+          <Grid.Container gap={2}>{aboutCards}</Grid.Container>
         </Page>
       </VertoProvider>
     </>
