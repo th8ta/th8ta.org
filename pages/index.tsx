@@ -57,7 +57,7 @@ export default function Home() {
           key={i}
         >
           <div className={styles.image}>
-            <img src={people[i].img} height="50px" />
+            <img src={people[i].img} draggable={false} height="50px" />
             <div className={styles.body}>
               <h4>{people[i].name}</h4>
               <p>{people[i].title}</p>

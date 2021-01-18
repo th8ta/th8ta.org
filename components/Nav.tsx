@@ -7,7 +7,7 @@ export default function Nav() {
     <div className={styles.Nav}>
       <Link href="/">
         <a className={styles.logo}>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" draggable={false} />
         </a>
       </Link>
       <a
