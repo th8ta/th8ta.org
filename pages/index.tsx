@@ -22,7 +22,7 @@ const people = [
   },
   {
     name: "Marton Lederer",
-    title: "Frontend Developer",
+    title: "Frontend & Mobile Developer",
     img: "/marton.jpeg",
     link: "https://twitter.com/martonlederer",
   },
@@ -37,6 +37,12 @@ const people = [
     title: "User Experience Designer",
     img: "/max.jpeg",
     link: "https://twitter.com/maximousblk",
+  },
+  {
+    name: "Divy Srivastava",
+    title: "Backend Developer",
+    img: "/divy.jpeg",
+    link: "https://twitter.com/undefined_void",
   },
 ];
 
