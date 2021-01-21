@@ -115,6 +115,23 @@ export default function Home() {
               </p>
             </div>
           </Card>
+          <Card
+            style={{ marginBottom: "1em", cursor: "pointer" }}
+            className={styles.testToken}
+            hoverable
+            shadow
+          >
+            <h1 className={styles.code}>APP</h1>
+            <div className={styles.info}>
+              <h4 className={styles.code}>
+                <span>[Coming]</span>Vallo
+              </h4>
+              <p className={styles.code}>
+                <span>INFO:</span>A simple & intuitive way for anyone to manage
+                their Arweave tokens
+              </p>
+            </div>
+          </Card>
           <h1 className={styles.title}>Who we are</h1>
           <Grid.Container gap={2}>{aboutCards}</Grid.Container>
         </Page>
