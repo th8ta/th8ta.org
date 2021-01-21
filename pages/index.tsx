@@ -16,7 +16,7 @@ const people = [
   },
   {
     name: "John Letey",
-    title: "Chief Technology Officer",
+    title: "Chief Technical Officer",
     img: "/john.jpeg",
     link: "https://twitter.com/johnletey",
   },
@@ -79,11 +79,7 @@ export default function Home() {
       <Head>
         <title>th8ta</title>
       </Head>
-      <Metas
-        title="th8ta"
-        description="Building from all angles"
-        image="/favicon.png"
-      />
+      <Metas />
       <Nav />
       <VertoProvider>
         <Page>
