@@ -116,6 +116,28 @@ export default function Home() {
             className={styles.testToken}
             hoverable
             shadow
+            onClick={() => {
+              router.push(
+                "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap"
+              );
+            }}
+          >
+            <h1 className={styles.code}>EXT</h1>
+            <div className={styles.info}>
+              <h4 className={styles.code}>
+                <span>[Wallet]</span>ArConnect
+              </h4>
+              <p className={styles.code}>
+                <span>INFO:</span>A browser extension to securely manage your
+                Arweave assets
+              </p>
+            </div>
+          </Card>
+          <Card
+            style={{ marginBottom: "1em", cursor: "pointer" }}
+            className={styles.testToken}
+            hoverable
+            shadow
           >
             <h1 className={styles.code}>APP</h1>
             <div className={styles.info}>
