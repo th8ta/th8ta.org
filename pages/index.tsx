@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import Head from "next/head";
 import Metas from "../components/Metas";
 import Nav from "../components/Nav";
@@ -49,7 +48,6 @@ const people = [
 const aboutCards = [];
 
 export default function Home() {
-  const router = useRouter();
   for (let i = 0; i < people.length; i++) {
     aboutCards.push(
       <Grid xs={24} sm={24} md={12} lg={12} xl={8}>
@@ -58,7 +56,7 @@ export default function Home() {
           className={styles.aboutCard}
           hoverable
           onClick={() => {
-            router.push(people[i].link);
+            window.open(people[i].link, "_blank");
           }}
           key={i}
         >
@@ -98,7 +96,7 @@ export default function Home() {
             hoverable
             shadow
             onClick={() => {
-              router.push("https://verto.exchange");
+              window.open("https://verto.exchange", "_blank");
             }}
           >
             <h1 className={styles.code}>VRT</h1>
@@ -117,8 +115,9 @@ export default function Home() {
             hoverable
             shadow
             onClick={() => {
-              router.push(
-                "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap"
+              window.open(
+                "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap",
+                "_blank"
               );
             }}
           >
