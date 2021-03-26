@@ -14,12 +14,6 @@ const people = [
     link: "https://twitter.com/TateBerenbaum",
   },
   {
-    name: "John Letey",
-    title: "Chief Technical Officer",
-    img: "/john.jpeg",
-    link: "https://twitter.com/johnletey",
-  },
-  {
     name: "Marton Lederer",
     title: "Frontend & Mobile Developer",
     img: "/marton.jpeg",
@@ -42,6 +36,12 @@ const people = [
     title: "Backend Developer",
     img: "/divy.jpeg",
     link: "https://twitter.com/undefined_void",
+  },
+  {
+    name: "John Letey",
+    title: "Consultant",
+    img: "/john.jpeg",
+    link: "https://twitter.com/johnletey",
   },
 ];
 
@@ -81,14 +81,6 @@ export default function Home() {
       <Nav />
       <VertoProvider>
         <Page>
-          <div className={styles.Hero} style={{ marginTop: "2.3em" }}>
-            <iframe
-              src="https://my.spline.design/deviceiphone12-f8b7820e686be2d0b1b63f9b8949e034/"
-              frameBorder="0"
-              width="100%"
-              height="100%"
-            ></iframe>
-          </div>
           <h1 className={styles.title}>Ventures</h1>
           <Card
             style={{ marginBottom: "1em", cursor: "pointer" }}
