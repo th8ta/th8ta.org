@@ -107,10 +107,7 @@ export default function Home() {
             hoverable
             shadow
             onClick={() => {
-              window.open(
-                "https://chrome.google.com/webstore/detail/arconnect/einnioafmpimabjcddiinlhmijaionap",
-                "_blank"
-              );
+              window.open("https://arconnect.io", "_blank");
             }}
           >
             <h1 className={styles.code}>EXT</h1>
