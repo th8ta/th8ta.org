@@ -15,15 +15,9 @@ const people = [
   },
   {
     name: "Marton Lederer",
-    title: "Frontend & Mobile Developer",
+    title: "Frontend Developer",
     img: "/marton.jpeg",
     link: "https://twitter.com/martonlederer",
-  },
-  {
-    name: "Fabian Riewe",
-    title: "Blockchain Developer",
-    img: "/fabian.jpeg",
-    link: "https://twitter.com/RieweFabian",
   },
   {
     name: "Maximous Black",
@@ -36,12 +30,6 @@ const people = [
     title: "Backend Developer",
     img: "/divy.jpeg",
     link: "https://twitter.com/undefined_void",
-  },
-  {
-    name: "John Letey",
-    title: "Consultant",
-    img: "/john.jpeg",
-    link: "https://twitter.com/johnletey",
   },
 ];
 
@@ -118,23 +106,6 @@ export default function Home() {
               <p className={styles.code}>
                 <span>INFO:</span>A browser extension to securely manage your
                 Arweave assets
-              </p>
-            </div>
-          </Card>
-          <Card
-            style={{ marginBottom: "1em", cursor: "pointer" }}
-            className={styles.testToken}
-            hoverable
-            shadow
-          >
-            <h1 className={styles.code}>APP</h1>
-            <div className={styles.info}>
-              <h4 className={styles.code}>
-                <span>[Coming]</span>Vallo
-              </h4>
-              <p className={styles.code}>
-                <span>INFO:</span>A simple & intuitive way for anyone to manage
-                their Arweave tokens
               </p>
             </div>
           </Card>

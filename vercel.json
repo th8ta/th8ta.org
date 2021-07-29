@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "team",
+      "destination": "https://www.notion.so/verto/Join-our-team-3773a21724f14079b0e281f5b480b1d4"
+    }
+  ]
+}
